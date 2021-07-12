@@ -8,16 +8,18 @@ body{
 
 main{
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
 
 }
 /* top players style */
 .container{
     background-color: #FFFFFF;
     width: 870px;
-    /* height: 679px; */
     padding: 30px;
     border-radius: 5px;
+    margin-bottom: 25px;
     
 }
 .top-players{
@@ -66,7 +68,7 @@ hr{
     height: 117px;
     margin-right: 16px;
 }
-.blog-title{
+.blog-title, .course-title{
     font-size: 20px;
 }
 .author-name{
@@ -76,4 +78,41 @@ hr{
     text-decoration: none;
     color: #562EFF;
     font-size: 16px;
+}
+
+/* latest courses */
+.course-image{
+    width: 224px;
+    height: 104px;
+}
+.full{
+    color: #FFC014;
+    font-size: 12px;
+}
+
+.null{
+    color: #AEAEAE;
+    opacity: 0.25;
+    font-size: 12px;
+}
+.rating-time{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.duration-style{
+    background-color: #FFE4E8;
+    border-radius: 15px;
+    padding: 5px;
+}
+.hr-text{
+    font-family: 'Poppins', sans-serif;
+}
+.course-one{
+    padding: 25px;
+}
+.latest-courses{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
 }

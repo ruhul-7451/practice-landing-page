@@ -13,7 +13,7 @@ nav{
     width: 100%;
     height: 65px;
     background-color: royalblue;
-    position: fixed;
+    /* position: fixed; */
 
 }
 nav .logo{
@@ -58,7 +58,7 @@ main{
     padding: 30px;
     border-radius: 5px;
     margin-bottom: 25px;
-    margin-top: 5%;
+    /* margin-top: 5%; */
 }
 .top-players{
     margin-bottom: 30px;
@@ -152,5 +152,70 @@ hr{
 .latest-courses{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+
+}
+
+/*-----------------------
+    Media Queries
+------------------------*/
+
+/* Mobile Device */
+
+@media only screen and (max-width:688px) {
+
+    nav{
+        display: none;
+    }
+
+    .container{
+        width: 100%;
+    }
+    .players{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .player{
+        justify-content: center;
+        flex-direction: column;
+    }
+    
+    .top-blogs{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .blog-post{
+        align-items: center;
+    }
+
+    .latest-courses{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+}
+@media only screen and (min-width:689px) and (max-width:992px) {
+
+    nav{
+        display: none;
+    }
+
+    .container{
+        width: 100%;
+    }
+    .players{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .player{
+        justify-content: center;
+        flex-direction: column;
+    }
+    
+    .top-blogs{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .blog-post{
+        align-items: center;
+    }
+
+    .latest-courses{
+        grid-template-columns: repeat(2, 1fr);
+    }
 
 }
